@@ -26,7 +26,8 @@ SECRET_KEY = '$q9@7hyhl2utcv@5#slq85y4g))*a+-_4_hqk0ppkxn_cvxr-a'
 DEBUG = False
 
 ALLOWED_HOSTS = [
-     'shortenerproduction.herokuapp.com'
+     'shortenerproduction.herokuapp.com',
+     '127.0.0.1'
 ]
 
 
@@ -124,14 +125,13 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 
-
-STATIC_DIR = os.path.join(BASE_DIR,'static')
-
-STATICFILES_DIRS = [
-    STATIC_DIR,
-]
+# Extra places for collectstatic to find static files.
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
 
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': (
