@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'adminapp',
     'shortener',
     'rest_framework',
+    'whitenoise',
 ]
 
 MIDDLEWARE = [
