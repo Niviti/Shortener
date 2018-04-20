@@ -1,0 +1,57 @@
+
+
+body
+{
+
+}
+
+
+.execute
+{
+width: 80%;
+float:left;
+}
+
+.apart
+{
+float:left;
+margin-left: 20px;
+}
+
+.flex
+{
+margin-top:100px;
+}
+
+.our_form
+{
+border: #29292b solid 2px;
+padding-top: 30px;
+width: 100%;
+height: 100px;
+position: relative;
+}
+
+.our_form_inner
+{
+    padding-left: 20px;
+    margin-left: auto;
+    margin-right: auto;
+        width: 80%;
+        height: 50px;
+}
+
+#Result
+{
+border: #29292b solid 2px;
+padding-left: 130px;
+font-size: 31px;
+display: none;
+margin-top: 50px;
+}
+
+
+.danger-box
+{
+display:none;
+}

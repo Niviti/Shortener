@@ -1,0 +1,41 @@
+
+{% include "base.html" %}
+
+
+
+<div class="container flex">
+
+    <!-- Instrukcje -->
+<div class="alert alert-info" role="alert">
+
+
+    <p>Wskazówki:</p>
+    <ul>
+        <li>Pamiętaj aby adres url był odpowiednio długi </li>
+        <li>Przykładowy adres url: https://strefainwestorow.pl/wiadomosci/20180417/konrad-kakolewski-przekazal-wyjasnienia-do-uknf-dot-rozmow-z-pfr-i-pko-bp </li>
+    </ul>
+</div>
+    <div class="alert alert-danger danger-box" role="alert">
+    <p id="error_value"></p>
+</div>
+
+    <div class="our_form">
+
+  <div class="our_form_inner">
+    <div class="execute">
+<input placeholder="Podaj swój adress URL" type="text" class="form-control" id="url" class="style">
+    </div>
+     <div class="apart">
+    <input type="submit" class="btn btn-primary" value="Skróć!" onclick="action()" ></input>
+     </div>
+  </div>
+
+</div>
+     <div id="Result"> Skrócony adres url:   </div>
+</div>
+
+
+
+
+
+

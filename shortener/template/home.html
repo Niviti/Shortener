@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+<div class="container">
+
+<form action=""  method="POST" >{% csrf_token %}
+<input>
+<input placeholder="Podaj swój adress URL" type="text" class="form-control" id="usr">
+
+    <input type="submit" class="btn btn-primary">Skróć!</input>
+</form>
+
+</div>
+
+
+{% endblock content %}

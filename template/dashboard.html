@@ -1,0 +1,31 @@
+
+
+
+{% include "base.html" %}
+
+
+<div class="container">
+
+        <table class="table flex">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">url skrócony</th>
+      <th scope="col">url normalny</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for url in urls %}
+
+
+    <tr>
+      <th scope="row">{{ forloop.counter }}</th>
+        <td> {{ url.urlshort }} </td>
+      <td>  {{ url.url }}  </td>
+    </tr>
+    {% endfor %}
+
+               </tbody>
+</table>
+
+</div>
